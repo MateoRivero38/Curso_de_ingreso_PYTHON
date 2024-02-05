@@ -34,9 +34,12 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        nombre_alumno  = self.txt_nombre. get()
+        
+        alert("Nombre del alumno", nombre_alumno)  
         pass
-                
-    
+
+
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")

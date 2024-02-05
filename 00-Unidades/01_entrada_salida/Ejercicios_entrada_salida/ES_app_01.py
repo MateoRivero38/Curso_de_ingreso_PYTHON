@@ -26,8 +26,9 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        alert("E/S_01", "Esto no anda, Funciona")
+        alert("E/S_01", "Esto no anada, Funciona")
         pass 
+
 
 
 if __name__ == "__main__":

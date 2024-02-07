@@ -40,7 +40,11 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        num_1 = int(self.txt_operador_a.get())
+        num_2 = int(self.txt_operador_b.get())
+        alert("Resto",f"El resto de divir {num_1} y {num_2} es de: {num_1 % num_2}" )
         pass
+        
         
         
     

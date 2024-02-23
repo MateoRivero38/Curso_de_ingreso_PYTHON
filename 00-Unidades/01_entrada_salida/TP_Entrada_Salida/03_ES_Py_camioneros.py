@@ -14,13 +14,9 @@ Enunciado:
 
 3.	Para el departamento de logística:
 
-	A.	Es necesario saber la cantidad camiones que harian falta para transportar los materiales que se utilizarán para la construcción
-      de un edificio. Para ello, se ingresa la cantidad de toneladas necesarias de materiales a transportar. El programa deberá informa
-      r la cantidad de camiones, sabiendo que cada uno de ellos puede transportar por viaje 3500kg
+	A.	Es necesario saber la cantidad camiones que harian falta para transportar los materiales que se utilizarán para la construcción de un edificio. Para ello, se ingresa la cantidad de toneladas necesarias de materiales a transportar. El programa deberá informar la cantidad de camiones, sabiendo que cada uno de ellos puede transportar por viaje 3500kg
 
-    B.	A partir del ingreso de la cantidad de kilómetros que tiene que recorrer estos camiones para llegar al destino de la obra,
-      necesitamos que el programa informe cual es el tiempo (en horas) que tardará cada uno de los camiones, si sabemos que cada camión puede
-        ir a una velocidad máxima y constante de 90 km/h  
+    B.	A partir del ingreso de la cantidad de kilómetros que tiene que recorrer estos camiones para llegar al destino de la obra,necesitamos que el programa informe cual es el tiempo (en horas) que tardará cada uno de los camiones, si sabemos que cada camión puede ir a una velocidad máxima y constante de 90 km/h  
 
 '''
 

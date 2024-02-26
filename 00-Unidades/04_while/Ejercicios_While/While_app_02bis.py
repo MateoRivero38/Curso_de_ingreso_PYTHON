@@ -29,7 +29,19 @@ class App(customtkinter.CTk):
         
     
     def btn_mostrar_iteracion_on_click(self):
-        pass
+        contador = 0
+        acumulador_suma = 0
+        while contador < 10:
+            print(contador + 1)
+            contador += 1
+            if contador % 2 == 0: #el % es para calcular el resto de la division
+                acumulador_suma = acumulador_suma + contador
+        alert('Mensaje:', f'La suma de los numero comprendidos es de {acumulador_suma}')
+
+                
+                
+
+        
     
     
 if __name__ == "__main__":

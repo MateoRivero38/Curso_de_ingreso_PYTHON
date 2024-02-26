@@ -37,9 +37,9 @@ class App(customtkinter.CTk):
         destino = self.combobox_destino.get()
         match destino:
             case 'Cataratas':
-                mensaje = 'En esta zona, la mayoria de las estaciones del ano hace calor.'
+                mensaje = 'En esta zona, la mayoria de las estaciones del año hace calor.'
             case _:
-                mensaje = 'En esta zona, la mayoria de las estaciones del ano hace frio'
+                mensaje = 'En esta zona, la mayoria de las estaciones del año hace frio'
         alert('Temperatura', mensaje)
         
     

@@ -48,39 +48,75 @@ class App(customtkinter.CTk):
         precio = 800 * cantidad
         match marca:
             case 'ArgentinaLuz':
-                if cantidad >= 6:
-                    descuento = 50
-                elif cantidad == 5:
-                    descuento = 40
-                elif cantidad == 4:
-                    descuento = 25
-                elif cantidad == 3:
-                    descuento = 15
-                else:
-                    descuento = 0
+                match cantidad:
+                    case 5:
+                        descuento = 40
+                    case 4:
+                        descuento = 25
+                    case 3:
+                        descuento = 15
+                    case 2 | 1:
+                        descuento = 0
+                    case _:
+                        descuento = 50
+           
+                #if cantidad >= 6:
+                 #   descuento = 50
+                #elif cantidad == 5:
+                 #   descuento = 40
+               # elif cantidad == 4:
+                 #   descuento = 25
+               # elif cantidad == 3:
+                 #   descuento = 15
+               # else:
+                 #   descuento = 0
 
             case 'FelipeLamparas':
-               if cantidad >= 6:
-                descuento = 50
-               elif cantidad == 5:
-                   descuento = 30
-               elif cantidad == 4:
-                    descuento = 25
-               elif cantidad == 3:
-                    descuento = 10
-               else:
-                   descuento = 0
+                match cantidad:
+                    case 5:
+                        descuento = 30
+                    case 4:
+                        descuento = 25
+                    case 3:
+                        descuento = 10
+                    case 1|2:
+                        descuento = 0
+                    case _:
+                        descuento = 50
             case _:
-                if cantidad >= 6:
-                    descuento = 50
-                elif cantidad == 5:
-                    descuento = 30
-                elif cantidad == 4:
-                    descuento = 20
-                elif cantidad == 3:
-                    descuento = 5
-                else:
-                    descuento = 0
+                match cantidad:
+                    case 5:
+                        descuento = 30
+                    case 4:
+                        descuento = 20
+                    case 3:
+                        descuento = 5
+                    case 1|2:
+                        descuento = 0
+                    case _:
+                        descuento = 50
+                        
+              # if cantidad >= 6:
+              #  descuento = 50
+              # elif cantidad == 5:
+              #     descuento = 30
+              # elif cantidad == 4:
+              #      descuento = 25
+              # elif cantidad == 3:
+              #      descuento = 10
+              # else:
+              #     descuento = 0
+          #  case _:
+              #  if cantidad >= 6:
+              #      descuento = 50
+             #   elif cantidad == 5:
+              #      descuento = 30
+             #   elif cantidad == 4:
+             #       descuento = 20
+              #  elif cantidad == 3:
+             #       descuento = 5
+             #   else:
+              #      descuento = 0
 
         precio_total = precio - precio * descuento / 100
         if precio_total > 4000:
